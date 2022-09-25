@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>bulb</title>
+        <style type="text/css" media="all">
+            image{
+                width:30px;
+                height:30px;
+            }
+            button{
+                width:200px;
+                height:100px;
+            }
+        </style>
+    </head>
+    <body>
+       <img src="Pictures/Screenshots/bulboff.png" alt="bulb" id="bulb" />
+       <button type="submit" id="turn">turn <button type="submit"></button></button>
+       <script type="text/javascript" charset="utf-8">
+           var image=document.getElementById("bulb");
+           var button=document.getElementById("turn");
+           button.onmouseover=function light(){
+               window.image.src="Pictures/Screenshots/bulbon.png"
+           
+           };
+           button.onmouseout=function lighton(){window.image.src="Pictures/Screenshots/bulboff.png"}
+         
+       </script>
+    </body>
+</html>
